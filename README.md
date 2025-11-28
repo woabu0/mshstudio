@@ -1,4 +1,4 @@
-# Mshstudio - Agency Website
+# Mshstudio - Portfolio Website
 
 Welcome to the **Mshstudio** project! This README provides an overview of the project, setup instructions, and other relevant details.
 
@@ -8,7 +8,7 @@ Welcome to the **Mshstudio** project! This README provides an overview of the pr
 - [About](#about)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Structure](#structure)
 - [Contributors](#contributors)
 - [Contributing](#contributing)
 - [License](#license)
@@ -23,38 +23,51 @@ Welcome to the **Mshstudio** project! This README provides an overview of the pr
 
 ## Features
 
-- Navbar
-- Hero
-- Services
-- Expertise
-- Works
-- Reviews
-- Contact
-- Footer
+- Hero Section
+- About Section
+- Services Section
+- Expertise Section
+- Works Page
+- Feedback Section
+- Contact Page
+- Responsive Design
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/imabu0/mshstudio.git
+   git clone https://github.com/woabu0/mshstudio.git
    ```
-
-## Usage
-
-1. Start the application:
+2. Start the application:
    ```bash
    Go Live
    ```
-2. Open your browser and navigate to:
+3. Open your browser and navigate to:
    ```
    http://localhost:5500
    ```
 
+## Structure
+
+```
+mshstudio/
+├── assets/
+│   ├── logo.png
+│   └── white-logo.png
+├── fonts/
+│   └── grifter.otf
+├── index.html
+├── index.js
+├── style.css
+├── LICENSE
+└── README.md
+```
+
 ## Contributors
 
 <p align="center">
-  <a href="https://github.com/imabu0/mshstudio/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=imabu0/mshstudio" alt="Contributors" />
+  <a href="https://github.com/woabu0/mshstudio/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=woabu0/mshstudio" alt="Contributors" />
   </a>
 </p>
 

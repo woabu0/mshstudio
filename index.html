@@ -2,243 +2,364 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Mshstudio - A powerful digital design agency specializing in UX/UI design, web development, app design, and branding. Transform your ideas into reality." />
+    <meta name="keywords" content="digital agency, web design, UX/UI design, web development, app design, branding, SEO" />
+    <meta name="author" content="Mshstudio" />
+    <meta name="theme-color" content="#06b6d4" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mshstudio0.vercel.app/" />
+    <meta property="og:title" content="Mshstudio | Powerful Digital Design Agency" />
+    <meta property="og:description" content="Transform your ideas into reality through design, technology, and innovation." />
+    <meta property="og:image" content="./assets/logo.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mshstudio0.vercel.app/" />
+    <meta property="twitter:title" content="Mshstudio | Powerful Digital Design Agency" />
+    <meta property="twitter:description" content="Transform your ideas into reality through design, technology, and innovation." />
+    <meta property="twitter:image" content="./assets/logo.png" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://i.pravatar.cc" />
+    
+    <!-- Google Fonts - Load with font-display swap for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    </noscript>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="preload" href="fonts/grifter.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="./assets/logo.png" as="image" />
+    
+    <!-- Critical CSS inline or load immediately -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Non-critical CSS loaded asynchronously -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+    </noscript>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
     />
-    <link rel="icon" type="image/png" href="./assets/white-logo.png">
-    <title>mshstudio | Home</title>
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    </noscript>
+    
+    <link rel="icon" type="image/png" href="./assets/white-logo.png" />
+    <title>Mshstudio | Powerful Digital Design Agency - Transform Ideas Into Reality</title>
+    
   </head>
 
   <body>
-    <div id="preloader"></div>
     <!--Navbar-->
     <custom-navbar> </custom-navbar>
 
     <!--Hero Section-->
-    <section class="container">
-      <div class="home">
-        <p>CREATE - OPTIMIZE - DEVELOPE</p>
-        <h1>
-          Powerful Digital <br />
-          Design Agency
-        </h1>
-        <p>
-          WE ARE GLAD TO SEE YOU ON OUR WEBSITE! WE ARE SURE, THAT YOU <br />
-          WILL FIND EVERYTHING YOU NEED FOR YOUR PROJECT.
-        </p>
-        <img src="./assets/mouse.png" alt="Mouse" />
+    <section class="container hero-section">
+      <div class="hero-social">
+        <a href="#" aria-label="Facebook" class="hero-social-link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" aria-label="Instagram" class="hero-social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" aria-label="Behance" class="hero-social-link">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="hero-social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" aria-label="Twitter" class="hero-social-link">
+          <i class="fab fa-x-twitter"></i>
+        </a>
       </div>
-      <div class="company-names">
-        <h1>Sharpy.</h1>
-        <h1>Tech1usa</h1>
-        <h1>Courtside</h1>
-        <h1>Smart off</h1>
-        <h1>WooW</h1>
+      <div class="home">
+        <div class="hero-content">
+          <p class="hero-tagline">CREATE - OPTIMIZE - DEVELOPE</p>
+          <h1>
+            <span>Powerful Digital</span><br />
+            <span>Design Agency</span>
+          </h1>
+          <p class="hero-description">
+            We are glad to see you on our website! We are sure that you will find everything you need for your project.
+          </p>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-visual-container">
+            <div class="floating-card card-1">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="floating-card card-2">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="floating-card card-3">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="floating-card card-4">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="hero-gradient-orb"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About Section-->
+    <section id="about" class="container about-page">
+      <h2 class="section-title">About Us</h2>
+      <p class="section-subtitle">Discover our values and what drives us to create exceptional digital experiences</p>
+      <div class="about-content">
+        <div class="about-values">
+          <div class="values-list">
+            <div class="value-item">
+              <div class="value-number">01</div>
+              <div class="value-content">
+                <h3>Collaborative</h3>
+                <p>
+                  We actively listen, brainstorm, and mutually bolster one another
+                  to generate a genuinely distinctive outcome through our
+                  collaborative endeavors. Partnering with us will evoke a sense of
+                  seamless team cohesion.
+                </p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-number">02</div>
+              <div class="value-content">
+                <h3>Flexible</h3>
+                <p>
+                  We customize our methodology for each client, project, and task.
+                  We extend the same adaptability within our team because true
+                  innovation can't thrive within constraints.
+                </p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-number">03</div>
+              <div class="value-content">
+                <h3>Dedicated</h3>
+                <p>
+                  You require a team deeply dedicated to your triumph. In the realm
+                  of UX, we transcend expectations. We refine every pixel
+                  meticulously and scrutinise every minute element to shape
+                  influential choices.
+                </p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-number">04</div>
+              <div class="value-content">
+                <h3>People-oriented</h3>
+                <p>
+                  Compassion is at our core. Seriously. The triumph of clients, the
+                  welfare of our team, and the requisites of users hold equal
+                  significance. We consistently push boundaries to guarantee
+                  contentment with our designs, solutions, and working environment
+                  for all.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!--Service Section-->
     <section class="container service">
-      <h1>Our Services.</h1>
-      <p>
-        Every one of us loves something different. So, explore the world through
-        the lens of our visual capabilities, and find what you love
-      </p>
-      <div class="service-name">
-        <h6>Web Dev</h6>
-        <h6>App Design</h6>
-        <h6>S.E.O</h6>
-        <h6>UX/UI Design</h6>
-        <h6>Branding</h6>
-      </div>
-      <div class="horizontal-line"></div>
-      <div class="services">
-        <div>
-          <h1>UX/UI Design</h1>
-          <p>
-            By putting users' needs at the forefront, we tell a unique story of
-            your company, juggling with fancy visual elements.
-          </p>
-        </div>
-        <img class="service-arrow" src="./assets/anglearrow.png" alt="arrow" />
-      </div>
-      <div class="horizontal-line"></div>
-      <div class="services">
-        <div>
-          <h1>Technology</h1>
-          <p>
-            The motto of our development process is creating digital experiences
-            that are both appealing and functional.
-          </p>
-        </div>
-        <img class="service-arrow" src="./assets/anglearrow.png" alt="arrow" />
-      </div>
-      <div class="horizontal-line bottom"></div>
-      <div class="services">
-        <div>
-          <h1>Business</h1>
-          <p>
-            With various tools, our experts can help you expand the target
-            audience and increase brand awareness.
-          </p>
-        </div>
-        <img class="service-arrow" src="./assets/anglearrow.png" alt="arrow" />
-      </div>
+      <h2 class="section-title">Our Services.</h2>
+      <p class="section-subtitle">Every one of us loves something different. So, explore the world through the lens of our visual capabilities, and find what you love</p>
+      <!-- Services will be rendered by JavaScript -->
     </section>
     <!--Expert Section-->
     <section class="container expert">
-      <div>
-        <p>
-          We are <br />
-          Expert On
-        </p>
-        <img src="./assets/arrow.png" alt="arrow" />
-      </div>
+      <h2 class="section-title">We are Expert On</h2>
+      <p class="section-subtitle">Specialized expertise across diverse industries to deliver tailored solutions for your unique needs</p>
       <div class="expert-list">
-        <h1>Healthtech</h1>
-        <h1>Fintech</h1>
-        <h1>E-commarce Tech</h1>
-        <h1>Education</h1>
-        <h1>Foodtech</h1>
-        <h1>Traveltech</h1>
-        <h1>Real state tech</h1>
-        <h1>B2B/SAAS</h1>
+        <!-- Expert list will be rendered by JavaScript -->
       </div>
     </section>
     <!--Work Section-->
-    <section class="container work">
-      <h2>Our Recent Works</h2>
-      <div class="work-showcase">
-        <div class="work-card">
-          <div>
-            <a
-              href="https://www.behance.net/gallery/160052321/Travel-24-Case-Study"
-              ><img src="./work/assets/work1.png" alt="Work"
-            /></a>
-            <h1>Travel 24 Case Study</h1>
-            <div class="work-tags">
-              <h6>Case Study</h6>
-              <h6>App Design</h6>
-            </div>
-          </div>
-        </div>
-        <div class="work-card">
-          <div>
-            <a
-              href="https://dribbble.com/shots/20694649-Medical-Health-Software-Design"
-              ><img src="./work/assets/work5.png" alt="Work"
-            /></a>
-            <h1>Medical Health - Software Design</h1>
-            <div class="work-tags">
-              <h6>SAAS Design</h6>
-              <h6>Software</h6>
-            </div>
-          </div>
-        </div>
-        <div class="work-card">
-          <div>
-            <a
-              href="https://dribbble.com/shots/21882273-Oxylabs-io-Website-Redesign"
-              ><img src="./work/assets/work3.png" alt="Work"
-            /></a>
-            <h1>Oxylabs.io Website Redesign</h1>
-            <div class="work-tags">
-              <h6>Website</h6>
-              <h6>Redesign</h6>
-            </div>
-          </div>
-        </div>
-        <div class="work-card">
-          <div>
-            <a
-              href="https://www.behance.net/gallery/101354595/Qatar-Branding-Design"
-              ><img src="./work/assets/work6.png" alt="Work"
-            /></a>
-            <h1>Qatar Branding Design</h1>
-            <div class="work-tags">
-              <h6>Branding</h6>
-              <h6>Logo Design</h6>
-            </div>
-          </div>
-        </div>
+    <section id="work" class="container work">
+      <h2 class="section-title">Our Recent Works</h2>
+      <p class="section-subtitle">Explore our portfolio of innovative digital solutions that transform ideas into exceptional experiences</p>
+      <div class="work-grid">
+        <!-- Work items will be rendered by JavaScript -->
       </div>
     </section>
     <!--Feedback Section-->
     <section class="container feedback">
-      <p class="feedback-heading">What Client Says</p>
+      <h2 class="section-title">What Client Says</h2>
+      <p class="section-subtitle">Hear from our satisfied clients about their experience working with us</p>
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./assets/client1.png" alt="profile" />
-            <div>
-              <h3>(Danny) ShootsandReels</h3>
-              <p>
-                A powerful scraper with city-level structured SERP data delivery
-                from major search engines.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/client2.png" alt="profile" />
-            <div>
-              <h3>(Luckman) Courteside</h3>
-              <p>
-                Great designer and extremely responsive. Makes an effort to make
-                things better and understand the problem statement.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/client3.png" alt="profile" />
-            <div>
-              <h3>kldmsg</h3>
-              <p>
-                I am beyond impressed with the outstanding work. He exceeded all
-                expectations and delivered a visually stunning design.
-                Throughout the project, he was dedicated, responsive, and highly
-                adaptable to my feedback.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/client4.png" alt="profile" />
-            <div>
-              <h3>(agustinmaillet) Sharpy</h3>
-              <p>
-                Exceptionally professional job. Surpassed my expectations.
-                Communication was seamless and rapid. When adjustments were
-                needed, they were executed punctually and, most importantly,
-                precisely as I envisioned. Many thanks—I enthusiastically
-                endorse shyed!
-              </p>
-            </div>
-          </div>
+          <!-- Feedback slides will be rendered by JavaScript -->
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      <div class="talk">
-        <p>
-          Ready to discuss <br />
-          your project?
-        </p>
-        <a href="./contact/contact.html">
-          <div class="talk-btn btn">
-            <div class="btn-green"></div>
-            Let's talk!
+    </section>
+    <!--Contact Section-->
+    <section id="contact" class="container contact-page">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Have a project in mind? Let's work together to bring your vision to life.</p>
+      <div class="contact-wrapper">
+        <form>
+          <div class="user-details">
+            <div class="user">
+              <label>Your Name</label>
+              <input type="text" id="name" placeholder="Enter Your Name" />
+            </div>
+            <div class="user">
+              <label>Your Email</label>
+              <input type="email" id="email" placeholder="Enter Your Email" />
+            </div>
           </div>
-        </a>
+          <div class="radio-sections">
+            <div>
+              <h6>I'm interested in...</h6>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="interest1"
+                  name="interest"
+                  class="radio-input"
+                />
+                <label for="interest1" class="radio-label">Web Development</label>
+                <input
+                  type="radio"
+                  id="interest2"
+                  name="interest"
+                  class="radio-input"
+                />
+                <label for="interest2" class="radio-label">App Design</label>
+                <input
+                  type="radio"
+                  id="interest3"
+                  name="interest"
+                  class="radio-input"
+                />
+                <label for="interest3" class="radio-label">UX/UI Design</label>
+                <input
+                  type="radio"
+                  id="interest4"
+                  name="interest"
+                  class="radio-input"
+                />
+                <label for="interest4" class="radio-label">Branding</label>
+                <input
+                  type="radio"
+                  id="interest5"
+                  name="interest"
+                  class="radio-input"
+                />
+                <label for="interest5" class="radio-label">S.E.O</label>
+                <input
+                  type="radio"
+                  id="interest6"
+                  name="interest"
+                  class="radio-input"
+                />
+                <label for="interest6" class="radio-label">Web Design</label>
+                <input
+                  type="radio"
+                  id="interest7"
+                  name="interest"
+                  class="radio-input"
+                />
+                <label for="interest7" class="radio-label">Animation</label>
+              </div>
+            </div>
+            <div class="radios">
+              <h6>Project budget (USD)</h6>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="budget1"
+                  name="budget"
+                  class="radio-input"
+                />
+                <label for="budget1" class="radio-label">$500-$1K</label>
+                <input
+                  type="radio"
+                  id="budget2"
+                  name="budget"
+                  class="radio-input"
+                />
+                <label for="budget2" class="radio-label">$1K-$5K</label>
+                <input
+                  type="radio"
+                  id="budget3"
+                  name="budget"
+                  class="radio-input"
+                />
+                <label for="budget3" class="radio-label">$5K-$10K</label>
+                <input
+                  type="radio"
+                  id="budget4"
+                  name="budget"
+                  class="radio-input"
+                />
+                <label for="budget4" class="radio-label">$20K-$50K</label>
+              </div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <h6>Tell us more about your project</h6>
+            <textarea placeholder="Something about your great idea"></textarea>
+            <button type="submit" onclick="sub()" class="cta-button">Submit</button>
+          </div>
+        </form>
       </div>
     </section>
     <!--Footer Section-->
     <custom-footer></custom-footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
+    <!-- Structured Data - Loaded at end for performance -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mshstudio",
+      "url": "https://mshstudio0.vercel.app/",
+      "logo": "https://mshstudio0.vercel.app/assets/logo.png",
+      "description": "A powerful digital design agency specializing in UX/UI design, web development, app design, and branding.",
+      "sameAs": [
+        "https://www.behance.net",
+        "https://dribbble.com"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "url": "https://mshstudio0.vercel.app/#contact"
+      }
+    }
+    </script>
+    
+    <!-- JavaScript - Loaded with defer for non-blocking execution -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="index.js" defer></script>
   </body>
 </html>
